@@ -8,7 +8,7 @@
         <input type="text" :placeholder="$t('inputs.mail')" v-model="email" name="email" id="email" autocapitalize="off" required>
         <input type="text" :placeholder="$t('inputs.subject')" v-model="objet" name="objet" id="objet" required>
         <button class="button" v-bind:disabled="!formValid" type="submit">
-            <span id="changeColor" class="text" v-bind:textContent="$t(text)"></span>
+            <span id="changeColor" class="text" :textContent="$t(text)"></span>
             <img v-if="showImage" class="arrow" src="@/assets/arrow.svg" alt="arrow">
         </button>
 
@@ -43,11 +43,10 @@ export default {
         modifieButton(state) {
             this.reset();
             this.span.style.color = 'black'
-            this.text = this.$t('button.' + state);
-            this.imageUrl = '';
+            this.text = 'button.' + state;
             this.showImage = false;
             setTimeout(() => {
-                this.text = this.$t('button.send');
+                this.text = 'button.send';
                 this.span.style.color = this.initialColor;
                 this.showImage = true;
             }, 3000);
