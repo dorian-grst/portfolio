@@ -21,7 +21,7 @@
                     <img src="@/assets/arrow.svg">
                 </a>
             </div>
-            <div class='dots'>
+            <div v-if="!isMobile()" class='dots'>
                 <span class='dot'></span>
                 <span class='dot'></span>
             </div>
@@ -44,6 +44,12 @@ export default {
             this.abbreviations[0].text = this.abbreviations[0].text === 'FR' ? 'EN' : 'FR';
             this.$i18n.locale = this.currentLocale === 'en' ? 'fr' : 'en';
             this.currentLocale = this.$i18n.locale;
+        },
+        isMobile() {
+            if (this.windowWidth <= 767) {
+                return true;
+            }
+            return false;
         }
     }
 }
