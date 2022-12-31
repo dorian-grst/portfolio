@@ -30,16 +30,16 @@ export default {
         }
 
     },
-    reset() {
-        this.nom = "";
-        this.prenom = "";
-        this.email = "";
-        this.objet = "";
-    },
     mounted() {
         this.span = document.getElementById('changeColor')
     },
     methods: {
+        reset() {
+            this.nom = "";
+            this.prenom = "";
+            this.email = "";
+            this.objet = "";
+        },
         modifieButton(state) {
             this.reset();
             this.span.style.color = 'black'
@@ -59,7 +59,7 @@ export default {
                     this.modifieButton('sent');
                 }, (error) => {
                     console.log(error.text);
-                    this.modifieButton('eror');
+                    this.modifieButton('error');
                 });
         },
     },
