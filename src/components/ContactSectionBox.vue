@@ -1,5 +1,5 @@
 <template>
-    <div class="contact-box">
+    <div class="contact-section-box">
         <div class="row">
             <contact-section-box-text :title="$t('informations.location')" information="Sète, FRANCE" />
             <contact-section-box-text :title="$t('informations.phone')" information="06 74 36 13 80" />
@@ -24,11 +24,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.contact-box {
+.contact-section-box {
     display: flex;
     flex-direction: row;
     gap: 100px;
-
+    align-items: center;
     .row {
         display: flex;
         flex-direction: column;
@@ -36,15 +36,16 @@ export default {
     }
 }
 
-@media (max-width: 1070px) {
-    .contact-box {
+@media (max-width: 1200px) {
+    .contact-section-box {
         gap: 50px;
     }
 }
 
 @media (max-width: 767px) {
-    .contact-box {
+    .contact-section-box {
         margin-left: 0;
+        align-items: flex-start;
 
         .row {
             gap: 25px;
@@ -53,7 +54,7 @@ export default {
 }
 
 @media (max-width: 667px) {
-    .contact-box {
+    .contact-section-box {
         flex-direction: column;
         gap: 20px;
     }

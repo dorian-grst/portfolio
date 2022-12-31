@@ -65,6 +65,9 @@ export default {
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
     overflow-x:hidden;
 }
 

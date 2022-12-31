@@ -36,6 +36,7 @@ export default {
 
     .text {
         font-size: 1.25vw;
+        text-decoration: none;
     }
 }
 

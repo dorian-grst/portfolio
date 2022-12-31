@@ -5,7 +5,7 @@
             <input type="text" :placeholder="$t('inputs.firstname')" v-model="prenom" name="prenom" id="prenom"
                 required>
         </div>
-        <input type="text" :placeholder="$t('inputs.mail')" v-model="email" name="email" id="email" required>
+        <input type="text" :placeholder="$t('inputs.mail')" v-model="email" name="email" id="email" autocapitalize="off" required>
         <input type="text" :placeholder="$t('inputs.subject')" v-model="objet" name="objet" id="objet" required>
         <button class="button" v-bind:disabled="!formValid" type="submit">
             <span id="changeColor" class="text" v-bind:textContent="$t(text)"></span>
@@ -76,6 +76,7 @@ export default {
 form {
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
 
     .name {
         display: flex;
@@ -114,6 +115,7 @@ form {
     form {
         display: block;
         margin-top: 30px;
+        margin-left: 0;
 
         .name {
             display: block;

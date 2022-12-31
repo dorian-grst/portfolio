@@ -38,7 +38,6 @@ export default {
         flex-direction: row;
         margin-left: 10%;
         margin-right: 10%;
-        justify-content: space-between;
     }
 }
 

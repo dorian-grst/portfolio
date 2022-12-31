@@ -10,7 +10,7 @@
                     @click="changeLanguage">
                     {{ abbreviation.text }}
                 </span>
-                <a class="cv" href='cv.pdf' target="_blank">
+                <a class="cv" :href="$t('cv')" target="_blank">
                     <span v-for="abbreviation in abbreviations.slice(1, 2)" :key="abbreviation.id">
                         {{ abbreviation.text }}
                     </span>
@@ -34,7 +34,6 @@ export default {
                 { id: 1, text: 'CV' }
             ],
             windowWidth: window.innerWidth
-
         }
     },
     mounted() {
