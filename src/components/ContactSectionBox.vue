@@ -6,7 +6,7 @@
         </div>
         <div class="row">
             <contact-section-box-link :title="$t('informations.networks')" firstlink="https://github.com/dorian-grst"
-                firsttext="github" secondlink="https://www.linkedin.com/in/dorian-grasset/" secondtext="linkedin" />
+                firsttext="github" :secondlink="$t('linkedin')" secondtext="linkedln" />
             <contact-section-box-text :title="$t('informations.mail')" information="dorian.grasset.contact@gmail.com" />
         </div>
     </div>
