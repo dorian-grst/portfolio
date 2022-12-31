@@ -1,0 +1,45 @@
+{
+  "home-title": {
+    "first": "DÉVELOPPEUR",
+    "second": "FRONT-END",
+    "third": "EN DEVENIR"
+  },
+  "profile-title": "DORIAN GRASSET",
+  "projects-title": "MES PROJETS",
+  "contact-title": "CONTACT",
+  "arrow": {
+    "home": "ACCUEIL",
+    "who": "QUI SUIS-JE",
+    "projects": "PROJETS",
+    "contact": "CONTACT"
+  },
+  "presentation": {
+    "left": "Actuellement en seconde année de Bachelor Universitaire de Technologie Informatique spécialité réalisation d’applications à Sète.",
+    "right": "Toujours prêt à apprendre et à découvrir de nouvelles choses. J'aime voyager, coder, faire de nouvelles activités avec mes amis. J’apprécie aussi le design UI/UX en plus du côté informatique. Je suis une personne sérieuse, impliquée et à l'écoute."
+  },
+  "projects": {
+    "first": "SITE VITRINE D’UNE CONTROVERSE",
+    "second": "JEU DE SOCIÉTÉ : LES AVENTURIERS DU RAIL",
+    "third": "JEU DE SOCIÉTÉ : SCRABBLE",
+    "fourth": "MIRACULUM : CODE GAME JAM 2022"
+  },
+  "informations": {
+    "location": "LOCALISATION",
+    "networks": "RÉSEAUX",
+    "mail": "MAIL",
+    "phone": "TÉLÉPHONE"
+  },
+  "inputs": {
+    "firstname": "Prénom",
+    "lastname": "Nom",
+    "mail": "Mail",
+    "subject": "Objet"
+  },
+  "button": {
+    "send":"Envoyer",
+    "sent": "Envoyé ✅",
+    "error": "Erreur ❌"
+  },
+  "cv": "cv-fr.pdf",
+  "linkedin": "https://www.linkedin.com/in/dorian-grasset/"
+}
