@@ -37,7 +37,8 @@ ul {
             color: #787878;
             text-decoration: none;
             flex-wrap: wrap;
-            gap: 5px;
+            align-items: center;
+            gap: 10px;
 
             span {
                 font-size: 40px;
