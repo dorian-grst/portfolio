@@ -1,5 +1,5 @@
 <template>
-    <ul>
+    <ul class="project-list">
         <li class="projects" v-for="project in projects" :key="project.name">
             <a class="project" target="_blank" :href="project.link">
                 <span class="name">{{ $t(project.name) }}</span>
@@ -24,15 +24,15 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-ul {
+.project-list {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-left: 10%;
     margin-right: 10%;
-    li {
-        a {
+    .projects {
+        .project {
             display: flex;
             color: #787878;
             text-decoration: none;
@@ -40,17 +40,17 @@ ul {
             align-items: center;
             gap: 10px;
 
-            span {
+            .name {
                 font-size: 40px;
                 color: #787878;
             }
 
-            span:hover {
+            .name:hover {
                 font-size: 45px;
                 color: black;
             }
 
-            img {
+            .arrow {
                 width: 30px;
             }
         }
@@ -58,18 +58,18 @@ ul {
 }
 
 @media (max-width: 1070px) {
-    ul {
-        li {
-            a {
-                span {
+    .project-list {
+        .projects {
+            .project {
+                .name {
                     font-size: 35px;
                 }
 
-                span:hover {
+                .name:hover {
                     font-size: 40px;
                 }
 
-                img {
+                .arrow {
                     width: 25px;
                 }
             }
@@ -78,14 +78,14 @@ ul {
 }
 
 @media (max-width: 767px) {
-    ul {
-        li {
-            a {
-                span {
+    .project-list {
+        .projects {
+            .project {
+                .name {
                     color: black;
                 }
 
-                span:hover {
+                .arrow:hover {
                     color: white;
                 }
             }
