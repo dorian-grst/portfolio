@@ -92,4 +92,24 @@ export default {
         }
     }
 }
+
+@media (max-width: 400px) {
+    .project-list {
+        .projects {
+            .project {
+                .name {
+                    font-size: 20px;
+                }
+
+                .name:hover {
+                    font-size: 25px;
+                }
+
+                .arrow {
+                    width: 15px;
+                }
+            }
+        }
+    }
+}
 </style>

@@ -2,8 +2,8 @@
     <section class="contact-section">
         <generic-title :words="['CONTACT']" :marginFor2ndLine="false" />
         <div class="box">
-            <contact-box />
-            <contact-form />
+            <contact-section-box />
+            <contact-section-form />
         </div>
         <generic-arrow @click="goProjet()" :text="$t('arrow.projects')" :pointingRight="false" />
     </section>
@@ -12,14 +12,14 @@
 <script>
 import GenericTitle from '@/components/GenericTitle.vue';
 import GenericArrow from '@/components/GenericArrow.vue';
-import ContactBox from '@/components/ContactBox.vue'
-import ContactForm from '@/components/ContactForm.vue'
+import ContactSectionBox from '@/components/ContactSectionBox.vue'
+import ContactSectionForm from '@/components/ContactSectionForm.vue'
 export default {
     components: {
         GenericTitle,
         GenericArrow,
-        ContactBox,
-        ContactForm
+        ContactSectionBox,
+        ContactSectionForm
     },
     methods: {
         goProjet() {

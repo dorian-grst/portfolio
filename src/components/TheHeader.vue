@@ -1,24 +1,20 @@
 <template>
     <header>
         <router-link class="left" to='/'>
-            <img src="@/assets/logo.png" alt="logo">
-            <span>Portfolio</span>
+            <img class="logo" src="@/assets/logo.png" alt="logo">
+            <span class="title">Portfolio</span>
         </router-link>
         <div class="right">
             <div class="container">
-                <span 
-                v-for="abbreviation in abbreviations.slice(0, 1)" 
-                :key="abbreviation.id"
-                @click="changeLanguage">
+                <span class="language" v-for="abbreviation in abbreviations.slice(0, 1)" :key="abbreviation.id"
+                    @click="changeLanguage">
                     {{ abbreviation.text }}
                 </span>
-                <a href='cv.pdf' target="_blank">
-                    <span 
-                    v-for="abbreviation in abbreviations.slice(1, 2)" 
-                    :key="abbreviation.id">
-                        {{ abbreviation.text}}
+                <a class="cv" href='cv.pdf' target="_blank">
+                    <span v-for="abbreviation in abbreviations.slice(1, 2)" :key="abbreviation.id">
+                        {{ abbreviation.text }}
                     </span>
-                    <img src="@/assets/arrow.svg">
+                    <img class="arrow" src="@/assets/arrow.svg">
                 </a>
             </div>
             <div v-if="!isMobile()" class='dots'>
@@ -36,14 +32,27 @@ export default {
             abbreviations: [
                 { id: 0, text: 'FR' },
                 { id: 1, text: 'CV' }
-            ]
+            ],
+            windowWidth: window.innerWidth
+
         }
+    },
+    mounted() {
+        this.$nextTick(() => {
+            window.addEventListener('resize', this.handleResize);
+        })
+    },
+    beforeUnmount() {
+        window.removeEventListener('resize', this.handleResize);
     },
     methods: {
         changeLanguage() {
             this.abbreviations[0].text = this.abbreviations[0].text === 'FR' ? 'EN' : 'FR';
             this.$i18n.locale = this.currentLocale === 'en' ? 'fr' : 'en';
             this.currentLocale = this.$i18n.locale;
+        },
+        handleResize() {
+            this.windowWidth = window.innerWidth;
         },
         isMobile() {
             if (this.windowWidth <= 767) {
@@ -68,13 +77,13 @@ header {
         align-items: center;
         text-decoration: none;
 
-        span {
+        .title {
             font-size: 25px;
             margin-left: 10px;
             color: black;
         }
 
-        img {
+        .logo {
             width: 40px;
         }
     }
@@ -88,13 +97,18 @@ header {
         .container {
             display: flex;
             gap: 100px;
-            font-size: 25px;
-            color: black;
-            text-decoration: none;
+            align-items: center;
 
-            a {
+            .cv {
                 text-decoration: none;
                 color: black;
+                font-size: 25px;
+
+            }
+            .language {
+                font-size: 25px;
+                color: black;
+                text-decoration: none;
             }
         }
 
@@ -123,6 +137,39 @@ header {
 
             .container {
                 gap: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        .left {
+
+            .title {
+                font-size: 12px;
+            }
+
+            .logo {
+                width: 20px;
+            }
+        }
+
+        .right {
+            .container {
+                .language {
+                    font-size: 15px;
+                }
+
+                .cv {
+                    font-size: 15px;
+                }
+
+                .cv {
+                    .arrow {
+                        width: 11px;
+                    }
+                }
             }
         }
     }

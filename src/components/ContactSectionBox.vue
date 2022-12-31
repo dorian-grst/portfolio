@@ -1,24 +1,24 @@
 <template>
     <div class="contact-box">
         <div class="row">
-            <contact-box-text :title="$t('informations.location')" information="Sète, FRANCE" />
-            <contact-box-text :title="$t('informations.phone')" information="06 74 36 13 80" />
+            <contact-section-box-text :title="$t('informations.location')" information="Sète, FRANCE" />
+            <contact-section-box-text :title="$t('informations.phone')" information="06 74 36 13 80" />
         </div>
         <div class="row">
-            <contact-box-link :title="$t('informations.networks')" firstlink="https://github.com/dorian-grst"
+            <contact-section-box-link :title="$t('informations.networks')" firstlink="https://github.com/dorian-grst"
                 firsttext="github" secondlink="https://www.linkedin.com/in/dorian-grasset/" secondtext="linkedin" />
-            <contact-box-text :title="$t('informations.mail')" information="dorian.grasset.contact@gmail.com" />
+            <contact-section-box-text :title="$t('informations.mail')" information="dorian.grasset.contact@gmail.com" />
         </div>
     </div>
 </template>
 
 <script>
-import ContactBoxText from '@/components/ContactBoxText.vue';
-import ContactBoxLink from '@/components/ContactBoxLink.vue';
+import ContactSectionBoxText from '@/components/ContactSectionBoxText.vue';
+import ContactSectionBoxLink from '@/components/ContactSectionBoxLink.vue';
 export default {
     components: {
-        ContactBoxText,
-        ContactBoxLink
+        ContactSectionBoxText,
+        ContactSectionBoxLink
     }
 }
 </script>

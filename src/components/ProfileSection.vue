@@ -2,9 +2,9 @@
     <section class="profile-section">
         <div class="container">
             <generic-title :words="['DORIAN', 'GRASSET']" :marginForSecondLine="false" />
-            <img src="@/assets/profilepicture.jpeg" alt="profile-picture" />
+            <img class="picture" src="@/assets/profilepicture.jpeg" alt="profile-picture" />
         </div>
-        <profile-presentation />
+        <profile-section-presentation />
         <generic-arrow :text="$t('arrow.projects')" @click="goProject()" />
         <generic-arrow :text="$t('arrow.home')" :pointingRight="false" @click="goHome()" />
     </section>
@@ -13,12 +13,12 @@
 <script>
 import GenericTitle from './GenericTitle.vue';
 import GenericArrow from './GenericArrow.vue';
-import ProfilePresentation from './ProfilePresentation.vue';
+import ProfileSectionPresentation from './ProfileSectionPresentation.vue';
 export default {
     components: {
         GenericTitle,
         GenericArrow,
-        ProfilePresentation
+        ProfileSectionPresentation
     },
     methods: {
         goHome() {
@@ -39,7 +39,7 @@ export default {
         display: flex;
         align-items: center;
 
-        img {
+        .picture {
             width: 20%;
             height: 20%;
             border-radius: 300px;
@@ -50,7 +50,7 @@ export default {
 }
 
 @media (max-width: 767px) {
-    img {
+    .picture {
         top: 390px;
         left: 450px;
         width: 200px;

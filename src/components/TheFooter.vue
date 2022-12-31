@@ -1,7 +1,7 @@
 <template>
-    <footer>
+    <footer class="the-footer">
         <div class="years" v-for="year in years" :key="year.id">
-            <span>{{ year.value }}</span>
+            <span class="year">{{ year.value }}</span>
         </div>
         <div>&nbsp;</div>
         <span>
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-footer {
+.the-footer {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -41,11 +41,18 @@ footer {
 }
 
 @media (max-width: 767px) {
-    footer {
+    .the-footer {
         padding-left: 30px;
         padding-top: 20px;
         padding-bottom: 20px;
         position: static;
     }
 }
+
+@media (max-width: 400px) {
+    .the-footer {
+        font-size : 12px;
+    }
+}
+    
 </style>

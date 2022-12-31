@@ -130,4 +130,20 @@ form {
         margin: 0 auto
     }
 }
+
+@media (max-width: 400px){
+    form {
+        input {
+            height : 40px;
+            font-size: 15px;
+
+        }
+        button {
+            font-size: 15px;
+            img {
+                width: 10px;
+            }
+        }
+    }
+}
 </style>

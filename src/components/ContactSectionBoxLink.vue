@@ -100,4 +100,19 @@ export default {
         }
     }
 }
+
+@media (max-width: 400px){
+    .contact-box-link {
+        .title {
+            font-size: 20px;
+        }
+        .links {
+            .link {
+                .text {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
 </style>

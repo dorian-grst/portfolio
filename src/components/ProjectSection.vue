@@ -1,7 +1,7 @@
 <template>
     <section class="project-section">
         <generic-title :words="[$t('projects-title')]" :marginFor2ndLine="false" />
-        <project-list/>
+        <project-section-list/>
         <generic-arrow :text="$t('arrow.contact')" @click="goContact()" />
         <generic-arrow :text="$t('arrow.who')" :pointingRight="false" @click="goProfile()" />
     </section>
@@ -10,12 +10,12 @@
 <script>
 import GenericTitle from '@/components/GenericTitle.vue';
 import GenericArrow from '@/components/GenericArrow.vue';
-import ProjectList from '@/components/ProjectList.vue';
+import ProjectSectionList from '@/components/ProjectSectionList.vue';
 export default {
     components: {
         GenericTitle,
         GenericArrow,
-        ProjectList
+        ProjectSectionList
     },
     methods: {
         goProfile() {

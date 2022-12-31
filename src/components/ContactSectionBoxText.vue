@@ -52,4 +52,16 @@ export default {
         }
     }
 }
+
+@media (max-width: 400px){
+    .contact-box-text {
+        .title {
+            font-size: 20px;
+        }
+
+        .text {
+            font-size: 12px;
+        }
+    }
+}
 </style>

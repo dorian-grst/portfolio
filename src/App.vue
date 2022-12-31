@@ -65,10 +65,12 @@ export default {
 * {
     margin: 0;
     padding: 0;
+    overflow-x:hidden;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
 .backgroundColoredRight {
