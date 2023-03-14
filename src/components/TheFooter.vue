@@ -1,7 +1,7 @@
 <template>
     <footer class="the-footer">
-        <div class="years" v-for="year in years" :key="year.id">
-            <span class="year">{{ year.value }}</span>
+        <div class="years">
+            <span class="year">{{ currentYear }} - {{ afterYear }}</span>
         </div>
         <div>&nbsp;</div>
         <span>
@@ -15,11 +15,8 @@ export default {
     data() {
         return {
             name: 'Dorian Grasset',
-            years: [
-                { id: 0, value: '2022' },
-                { id: 1, value: '-' },
-                { id: 2, value: '2023' },
-            ],
+            currentYear: new Date().getFullYear(),
+            afterYear: new Date().getFullYear() + 1,
         }
     }
 } 

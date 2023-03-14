@@ -6,6 +6,31 @@
   },
   "profile-title": "DORIAN GRASSET",
   "projects-title": "MY PROJECTS",
+  "projects-controversy": {
+    "first": "SHOWCASE SITE",
+    "second": "OF A CONTROVERSY",
+    "description": "The project consists of creating a website that presents a sociotechnical controversy related to digital ecosystems. This will involve producing a digital presentation of a social, economic or ecological issue linked to the digital ecosystem. For this, a group of four people will have to carry out an in-depth documentary research on a socio-technical controversy chosen from a list of proposed subjects or possible proposals. The members of the group will have to identify the issues, the actors, the chronology (knot of controversy) and the documentary resources associated with them in order to present the controversy in a clear and objective way on the website."
+  },
+  "projects-aventuriers-du-rail" : {
+    "first": "BOARD GAME :",
+    "second": "TICKET TO RIDE",
+    "description": "The project is taking place in three distinct phases. The first phase consists of developing the game mechanics in Java. A code skeleton is provided to facilitate the process. In this phase, the participants will have to write the body of the unimplemented functions, add functions/attributes/classes where necessary and verify that the program works correctly by performing unit tests. The second phase of the project involves the implementation of graph algorithms to define game strategies for players. Participants will have to program graph algorithms to evaluate each player's score at the end of the game. This phase requires a solid understanding of graph algorithms. Finally, the third phase of the project consists of the implementation of a graphical interface in JavaFX for the mechanics of the game. This interface will allow players to visualize and interact with the game. Participants will have to program the graphical interface using JavaFX."
+  },
+  "projects-scrabble": {
+    "first": "BOARD GAME :",
+    "second": "SCRABBLE",
+    "description": "The project consists in programming, in groups of two, a part of the game of Scrabble, first between humans, then between humans and computer. The game consists of a board, a bag of letter tokens and easels. Each player has 7 tokens to form words on the board and earn points according to the valuation of the letters and boxes used. A basic version will first be developed in object-oriented programming, with a simplified game rule. Optional extensions can then be added to correct the simplifications and improve the visual interface and the algorithms."
+  },
+  "projects-miraculum": {
+    "first": "MIRACULUM :",
+    "second": "CODE GAME JAM 2022",
+    "description": "Miraculum is a game made during Code Game Jam 2022 in 48 hours by a development team. In this game, the player embodies a crab who must collect as many objects as possible that fall to the bottom of the oceans to prevent pollution, while avoiding losing life by missing objects or absorbing things that are not good. for the aquatic environment. The Code Game Jam is an opportunity for developers to test their skills in programming, game design and teamwork, while having fun. This gathering allows you to meet other developers and be part of a community of video game enthusiasts. It is also a way to improve in game programming and get noticed by potential employers in the video game industry."
+  },
+  "projects-forum-application": {
+    "first": "COLLECTIVE DECISION",
+    "second": "APPLICATION",
+    "description": "The collective decision application, carried out by groups of 4 students during a semester, allows an organizer to ask a question by specifying an answer plan, a timetable for proposals and voting, as well as the proposal leaders and voters . Proposal managers can register co-authors to help write a proposal, and voters can choose between different proposals. Also, extensions can be added to the application to make it more complete and personalized."
+  },
   "contact-title": "CONTACT",
   "arrow": {
     "home": "HOME",
@@ -21,7 +46,8 @@
     "first": "SHOWCASE SITE OF A CONTROVERSY",
     "second": "BOARD GAME : TICKET TO RIDE",
     "third": "BOARD GAME : SCRABBLE",
-    "fourth": "MIRACULUM : CODE GAME JAM 2022"
+    "fourth": "MIRACULUM : CODE GAME JAM 2022",
+    "fifth": "COLLECTIVE DECISION APPLICATION"
   },
   "informations": {
     "location": "LOCATION",
@@ -40,6 +66,10 @@
     "sent": "Sent ✅",
     "error": "Error ❌"
   },
+  "subject": "Subject : ",
+  "languages": "Languages : ",
+  "links": "Links : ",
+  "rules": "rules",
   "cv": "cv-en.pdf",
   "linkedin": "https://www.linkedin.com/in/dorian-grasset/?locale=en_US"
 }

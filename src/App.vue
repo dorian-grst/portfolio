@@ -6,6 +6,11 @@
             <home-page class="backgroundColoredTop" />
             <profile-page />
             <projects-page class="backgroundColoredTop" />
+            <project-controversy-website-page />
+            <project-aventuriers-du-rail-page />
+            <project-scrabble-page />
+            <project-miraculum-page />
+            <project-forum-application-page />
             <contact-page />
         </div>
         <the-footer />
@@ -19,6 +24,12 @@ import HomePage from '@/views/HomePage.vue';
 import ProfilePage from '@/views/ProfilePage.vue';
 import ProjectsPage from '@/views/ProjectPage.vue';
 import ContactPage from '@/views/ContactPage.vue';
+import ProjectControversyWebsitePage from '@/views/ProjectControversyWebsitePage.vue';
+import ProjectAventuriersDuRailPage from '@/views/ProjectAventuriersDuRailPage.vue';
+import ProjectScrabblePage from '@/views/ProjectScrabblePage.vue';
+import ProjectMiraculumPage from '@/views/ProjectMiraculumPage.vue';
+import ProjectForumApplicationPage from '@/views/ProjectForumApplicationPage.vue';
+
 export default {
     components: {
         TheHeader,
@@ -27,6 +38,11 @@ export default {
         ProfilePage,
         ProjectsPage,
         ContactPage,
+        ProjectControversyWebsitePage,
+        ProjectAventuriersDuRailPage,
+        ProjectScrabblePage,
+        ProjectMiraculumPage,
+        ProjectForumApplicationPage
     },
     data() {
         return {

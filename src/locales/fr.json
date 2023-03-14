@@ -6,6 +6,31 @@
   },
   "profile-title": "DORIAN GRASSET",
   "projects-title": "MES PROJETS",
+  "projects-controversy": {
+    "first": "SITE VITRINE D'UNE",
+    "second": "CONTROVERSE",
+    "description": "Le projet consiste à créer un site web qui présente une controverse sociotechnique en lien avec les écosystèmes numériques. Il s'agira de réaliser une présentation numérique d'une problématique sociale, économique ou écologique liée à l'écosystème numérique. Pour cela, un groupe de quatre personnes devra effectuer une recherche documentaire approfondie sur une controverse sociotechnique choisie parmi une liste de sujets proposés ou de propositions possibles. Les membres du groupe devront identifier les enjeux, les acteurs, la chronologie (nœud de controverse) et les ressources documentaires qui y sont associées afin de présenter la controverse de manière claire et objective sur le site web."
+  },
+  "projects-aventuriers-du-rail" : {
+    "first": "JEU DE SOCIÉTÉ :",
+    "second": "LES AVENTURIERS DU RAIL",
+    "description": "Le projet se déroule en trois phases distinctes. La première phase consiste à développer la mécanique du jeu en Java. Un squelette de code est fourni pour faciliter le processus. Dans cette phase, les participants devront écrire le corps des fonctions non implémentées, ajouter des fonctions / attributs / classes là où cela est nécessaire et vérifier que le programme fonctionne correctement en effectuant des tests unitaires. La deuxième phase du projet implique la mise en œuvre des algorithmes de graphes pour définir des stratégies de jeu pour les joueurs. Les participants devront programmer des algorithmes de graphes pour évaluer le score de chaque joueur à la fin de la partie. Cette phase nécessite une compréhension solide des algorithmes de graphes. Enfin, la troisième phase du projet consiste en l'implémentation d'une interface graphique en JavaFX pour la mécanique du jeu. Cette interface permettra aux joueurs de visualiser et d'interagir avec le jeu. Les participants devront programmer l'interface graphique en utilisant JavaFX."
+  },
+  "projects-scrabble": {
+    "first": "JEU DE SOCIÉTÉ :",
+    "second": "SCRABBLE",
+    "description": "Le projet consiste à programmer, par groupe de deux, une partie du jeu de Scrabble, d'abord entre humains, puis entre humains et ordinateur. Le jeu se compose d'un plateau, d'un sac de jetons-lettres et de chevalets. Chaque joueur dispose de 7 jetons pour former des mots sur le plateau et gagner des points en fonction de la valorisation des lettres et des cases utilisées. Une version de base sera d'abord développée en programmation orientée objet, avec une règle du jeu simplifiée. Des extensions optionnelles pourront ensuite être ajoutées pour corriger les simplifications et améliorer l'interface visuelle et les algorithmes."
+  },
+  "projects-miraculum": {
+    "first": "MIRACULUM :",
+    "second": "CODE GAME JAM 2022",
+    "description": "Miraculum est un jeu réalisé lors de la Code Game Jam 2022 en 48 heures par une équipe de développement. Dans ce jeu, le joueur incarne un crabe qui doit récupérer le maximum d'objets qui tombent au fond des océans pour empêcher la pollution, tout en évitant de perdre de la vie en ratant des objets ou en absorbant des choses qui ne sont pas bonnes pour l'environnement aquatique. La Code Game Jam est une occasion pour les développeurs de mettre à l'épreuve leurs compétences en programmation, en conception de jeux et en travail d'équipe, tout en s'amusant. Ce rassemblement permet de rencontrer d'autres développeurs et de faire partie d'une communauté de passionnés de jeux vidéo. C'est aussi un moyen de se perfectionner dans la programmation de jeux et de se faire remarquer par des employeurs potentiels dans l'industrie du jeu vidéo."
+  },
+  "projects-forum-application": {
+    "first": "APPLICATION DE",
+    "second": "DÉCISION COLLECTIVE",
+    "description": "L'application de décision collective, réalisée par groupe de 4 étudiants pendant un semestre, permet à un organisateur de poser une question en précisant un plan de réponse, un calendrier pour les propositions et le vote, ainsi que les responsables de proposition et les votants. Les responsables de proposition peuvent inscrire des co-auteurs pour aider à rédiger une proposition, et les votants peuvent choisir entre les différentes propositions. En outre, des extensions peuvent être ajoutées à l'application pour la rendre plus complète et personnalisée."
+  },
   "contact-title": "CONTACT",
   "arrow": {
     "home": "ACCUEIL",
@@ -21,7 +46,8 @@
     "first": "SITE VITRINE D’UNE CONTROVERSE",
     "second": "JEU DE SOCIÉTÉ : LES AVENTURIERS DU RAIL",
     "third": "JEU DE SOCIÉTÉ : SCRABBLE",
-    "fourth": "MIRACULUM : CODE GAME JAM 2022"
+    "fourth": "MIRACULUM : CODE GAME JAM 2022",
+    "fifth": "APPLICATION DE DÉCISION COLLECTIVE"
   },
   "informations": {
     "location": "LOCALISATION",
@@ -40,6 +66,10 @@
     "sent": "Envoyé ✅",
     "error": "Erreur ❌"
   },
+  "subject": "Sujet : ",
+  "languages": "Langages : ",
+  "links": "Liens : ",
+  "rules": "consignes",
   "cv": "cv-fr.pdf",
   "linkedin": "https://www.linkedin.com/in/dorian-grasset/"
 }

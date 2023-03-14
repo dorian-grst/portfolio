@@ -1,7 +1,7 @@
 <template>
     <ul class="project-list">
         <li class="projects" v-for="project in projects" :key="project.name">
-            <a class="project" target="_blank" :href="project.link">
+            <a class="project" @click="goTo(project)">
                 <span class="name">{{ $t(project.name) }}</span>
                 <img class="arrow" src="../assets/arrow.svg">
             </a>
@@ -14,13 +14,19 @@ export default {
     data() {
         return {
             projects: [
-                { id: 0, name: "projects.first", link: 'https://github.com/dorian-grst/controversy-site' },
-                { id: 1, name: "projects.second", link: 'https://github.com/dorian-grst/aventuriers_du_rail' },
-                { id: 2, name: "projects.third", link: 'https://github.com/dorian-grst/scrabble' },
-                { id: 3, name: "projects.fourth", link: 'https://github.com/dorian-grst/code-game-jam-2022' }
+                { id: 0, name: "projects.first",path: "controversy-website",link: 'https://github.com/dorian-grst/controversy-site' },
+                { id: 1, name: "projects.second",path: "aventuriers-du-rail", link: 'https://github.com/dorian-grst/aventuriers_du_rail' },
+                { id: 2, name: "projects.third", path: "scrabble", link: 'https://github.com/dorian-grst/scrabble' },
+                { id: 3, name: "projects.fourth", path: "miraculum", link: 'https://github.com/dorian-grst/code-game-jam-2022' },
+                { id: 4, name: "projects.fifth", path: "forum-application" ,link: 'https://github.com/dorian-grst/forum-application'}
             ]
         }
-    }
+    },
+    methods: {
+        goTo(project) {
+            this.$router.push(project.path);         
+        }
+    },
 }
 </script>
 <style lang="scss" scoped>
