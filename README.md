@@ -1,14 +1,15 @@
-**PORTFOLIO (actuel)** 🏷️
+**PORTFOLIO (current)** 🏷️
 
-Vous trouverez dans ce repository le portfolio que j'ai mis en place et qui m'a servis d'entraînement.
+In this repository, you will find the portfolio that I have set up and used for training.
 
 # Installation
 
-1. Téléchargez ou clonez ce dépôt sur votre ordinateur local.
-2. Assurez-vous d'avoir Node.js et npm (ou yarn) installés sur votre ordinateur.
-3. Accédez à la racine du projet via votre terminal et exécutez la commande npm install ou yarn install pour installer les dépendances nécessaires.
 
-# Lancement
+1. Download or clone this repository to your local computer.
+2. Make sure that Node.js and npm (or yarn) are installed on your computer.
+3. Navigate to the root of the project in your terminal and run the command `npm install` or `yarn install` to install the necessary dependencies.
 
-1. Une fois l'installation des dépendances terminé, exécutez la commande npm run serve ou yarn serve pour lancer l'application en mode développement.
-2. L'application devrait maintenant être accessible via http://localhost:8080 dans votre navigateur.
+# Launch
+
+1. Once the installation of the dependencies is complete, run the command `npm run serve` or `yarn serve` to launch the application in development mode.
+2. The application should now be accessible via http://localhost:8080 in your browser.
